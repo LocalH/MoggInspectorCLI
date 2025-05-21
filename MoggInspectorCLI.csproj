@@ -5,7 +5,15 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Title>MoggInspectorCLI</Title>
+    <Authors>LocalH</Authors>
+	<Version>1.0-beta</Version>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser" Version="2.9.1" />
+    <PackageReference Include="Microsoft.Extensions.FileSystemGlobbing" Version="10.0.0-preview.4.25258.110" />
+  </ItemGroup>
 
   <ItemGroup>
     <Reference Include="MoggInspectorLib">

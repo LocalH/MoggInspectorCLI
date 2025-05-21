@@ -9,6 +9,7 @@ Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+		Description = Checks encrypted MOGG files for PS3 keymask mismatches
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{C278CF87-7934-4C41-AAB0-53A98B0B37AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU

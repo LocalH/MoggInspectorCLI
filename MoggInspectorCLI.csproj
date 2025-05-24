@@ -7,7 +7,7 @@
     <Nullable>enable</Nullable>
     <Title>MoggInspectorCLI</Title>
     <Authors>LocalH</Authors>
-	<Version>1.0-beta</Version>
+	<Version>1.1</Version>
   </PropertyGroup>
 
   <ItemGroup>

@@ -1,5 +1,7 @@
 # MoggInspectorCLI
-Command line tool using MoggInspectorLib to inspect moggs
+Command line tool using MoggInspectorLib to inspect moggs.
+
+Extract the release somewhere convenient, and add the folder that creates to your PATH for ease of use. 
 
 ```
 MoggInspectorCLI 1.0-beta

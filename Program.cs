@@ -195,8 +195,8 @@ namespace MoggInspectorCLI
             {
                 if (kc.Version > 11)
                 {
-                    Console.WriteLine("magicA: " + BitConverter.ToString(kc.MagicA).Replace("-", string.Empty));
-                    Console.WriteLine("magicB: " + BitConverter.ToString(kc.MagicB).Replace("-", string.Empty));
+                    Console.WriteLine("magicA: " + BitConverter.ToString((kc.MagicA).Reverse().ToArray()).Replace("-", string.Empty));
+                    Console.WriteLine("magicB: " + BitConverter.ToString((kc.MagicB).Reverse().ToArray()).Replace("-", string.Empty));
                     Console.WriteLine("360 keymask: " + BitConverter.ToString(kc.XboxMaskDec).Replace("-", string.Empty));
                     Console.WriteLine("PS3 keymask: " + BitConverter.ToString(kc.Ps3Mask).Replace("-", string.Empty));
                     Console.WriteLine("360 keyindex: " + kc.XboxIndex.ToString());
@@ -256,7 +256,7 @@ namespace MoggInspectorCLI
                     var helpText = HelpText.AutoBuild(parserResult, h =>
                     {
                         h.AdditionalNewLineAfterOption = false;
-                        h.Heading = "MoggInspectorCLI 1.0-beta";
+                        h.Heading = "MoggInspectorCLI 1.1";
                         h.AddPostOptionsText("If this tool detects a red key mogg, please contact LocalH on GitHub or Discord.");
                         return HelpText.DefaultParsingErrorsHandler(parserResult, h);
                     }, e => e);

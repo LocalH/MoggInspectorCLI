@@ -227,6 +227,12 @@ namespace MoggInspectorCLI
                 DidPrint = true;
             }
 
+            if (kc.Version > 17)
+            {
+                Console.WriteLine("This MOGG is marked as encryption v" + kc.Version + ", did Harmonix start using MOGGs again? Please contact LocalH on GitHub or Discord");
+                DidPrint = true;
+            }
+
             if (RedKeyMogg || kc.KeymaskMismatch || opts.Verbose || DidPrint )
             {
                 Console.WriteLine();

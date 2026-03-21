@@ -92,14 +92,24 @@ namespace MoggInspectorCLI
                     {
                         encType = "Old C3";
                     }
-                    else
+                    else if (kc.IsNemoMogg)
+                    {
+                        encType = "Nemo";
+                    }
                     {
                         encType = "Harmonix RB1/RB2";
                     }
                     break;
                 case 13:
                     encVer = "13 (0x0D)";
-                    encType = "New C3";
+                    if (kc.IsNemoMogg)
+                    {
+                        encType = "Nemo";
+                    }
+                    else
+                    {
+                        encType = "New C3";
+                    }
                     break;
                 case 14:
                     encVer = "14 (0x0E)";

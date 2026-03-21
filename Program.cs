@@ -272,7 +272,7 @@ namespace MoggInspectorCLI
                     var helpText = HelpText.AutoBuild(parserResult, h =>
                     {
                         h.AdditionalNewLineAfterOption = false;
-                        h.Heading = "MoggInspectorCLI 1.1";
+                        h.Heading = "MoggInspectorCLI 1.2";
                         h.AddPostOptionsText("If this tool detects a red key mogg, please contact LocalH on GitHub or Discord.");
                         return HelpText.DefaultParsingErrorsHandler(parserResult, h);
                     }, e => e);
@@ -292,8 +292,6 @@ namespace MoggInspectorCLI
                 }
                 );
 
-            //Console.WriteLine("MoggInspectorCLI v1.0 by LocalH");
-            //Console.WriteLine("skeleton project for the moment");
         }
     }
 }

@@ -96,6 +96,7 @@ namespace MoggInspectorCLI
                     {
                         encType = "Nemo";
                     }
+                    else
                     {
                         encType = "Harmonix RB1/RB2";
                     }
@@ -272,7 +273,7 @@ namespace MoggInspectorCLI
                     var helpText = HelpText.AutoBuild(parserResult, h =>
                     {
                         h.AdditionalNewLineAfterOption = false;
-                        h.Heading = "MoggInspectorCLI 1.2";
+                        h.Heading = "MoggInspectorCLI 1.2a";
                         h.AddPostOptionsText("If this tool detects a red key mogg, please contact LocalH on GitHub or Discord.");
                         return HelpText.DefaultParsingErrorsHandler(parserResult, h);
                     }, e => e);
